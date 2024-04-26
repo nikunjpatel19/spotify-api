@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1DB954;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    background-color: darkgrey;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: darkseagreen;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.playlist-container {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.playlist-container.show {
+    display: block;
+}
+
+.playlist-container p {
+    color: white;
+}
+
+.track-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.track-list p {
+    margin: 5px 0;
+}
+
+/* Search container */
+#search-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search input */
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 5px; /* Add margin between input and button */
+}
+
+/* Search button */
+#search-button,
+#reset-button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover,
+#reset-button:hover {
+    background-color: #0e6e3b;
+}
+#checkbox{
+    text-align: center;
+}
